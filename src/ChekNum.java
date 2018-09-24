@@ -14,14 +14,15 @@ public class ChekNum {
 
         checkNumber(input);
 
-       // int choice = data.nextInt();
         boolean cont = true;
+        //Loop will run till the user want to stop
         while (cont) {
             System.out.println("If you would like to continue press 1 if not press any key!");
             int choice = data.nextInt();
             if (choice == 1) {
                 System.out.println("Enter another number :");
                 input = data.nextInt();
+                //calling the method checkNumber
                 checkNumber(input);
             } else {
                 System.out.println("Thank you for playing");
@@ -32,6 +33,7 @@ public class ChekNum {
     }
 
     private static void checkNumber(int input) {
+        //Loop will run till the result/input is 1
         while (input != 1) {
             if (input % 2 == 0) {
 
